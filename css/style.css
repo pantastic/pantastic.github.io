@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(235, 235, 235);
+}
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+header h1{
+    flex-basis: 35%;
+    color: #BF0404;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid #BF0404;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    font-family: 'Indie Flower', cursive;
+}
+header nav{
+    flex-basis: 65%;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    font-family: 'Indie Flower', cursive;
+}
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+  }
+  
+  nav li {
+    text-align: center;
+    display: inline-block;
+  }
+  
+  nav a {
+    font-size: 1.5rem;
+    color: #BF0404;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+img {
+    border: 3px solid #448C30;
+}
+cite {
+    font-size: 0.7rem;
+}
+.bigbold {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.bookExercise {
+    background: url(images/paperbg.jpg);
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    border-top: 1px solid black ;
+    border-bottom: 1px solid black ;
+    border-right: 1px solid black ;
+}
+
+h1.bookExercise{
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    
+}
+
+blockquote {
+    border-left: 10px solid #2955D9;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    margin-left: 4rem;
+  }
+
+blockquote:before {
+    color: #448C30;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+blockquote p {
+    display: inline;
+  }
+#booklist{
+    font-style: italic;
+    border-left: 5px solid darkslategrey;
+}
+#bookfooter{
+    font-size: 0.7rem;
+    font-style: italic;
+}
+body.bookExercise p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.content1 {
+    width: 75%;  
+    padding-left: 0.5rem;
+}
+
+.floatleft {
+    float: left;
+    border: 5px solid red;
+    margin: 0 1rem 1rem 0;   
+}
+
+article {
+    width: 50rem;
+    margin: 0 auto;
+}
+
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in Hex */
+.Festive-autumn-decor-from-pumpkins,-berries-and-leaves-on-a-white--wooden-background.-Concept-of-Thanksgiving-day-or-Halloween.-Flat-lay-autumn-composition-with-copy-space.-1-hex { color: #730217; }
+.Festive-autumn-decor-from-pumpkins,-berries-and-leaves-on-a-white--wooden-background.-Concept-of-Thanksgiving-day-or-Halloween.-Flat-lay-autumn-composition-with-copy-space.-2-hex { color: #F2F2F0; }
+.Festive-autumn-decor-from-pumpkins,-berries-and-leaves-on-a-white--wooden-background.-Concept-of-Thanksgiving-day-or-Halloween.-Flat-lay-autumn-composition-with-copy-space.-3-hex { color: #F29F05; }
+.Festive-autumn-decor-from-pumpkins,-berries-and-leaves-on-a-white--wooden-background.-Concept-of-Thanksgiving-day-or-Halloween.-Flat-lay-autumn-composition-with-copy-space.-4-hex { color: #F28705; }
+.Festive-autumn-decor-from-pumpkins,-berries-and-leaves-on-a-white--wooden-background.-Concept-of-Thanksgiving-day-or-Halloween.-Flat-lay-autumn-composition-with-copy-space.-5-hex { color: #F25D27; }
+
+
