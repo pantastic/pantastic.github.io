@@ -5,28 +5,30 @@ body {
 .wrapper{
     width: 80%;
     margin: 0 auto;
+    text-align: center;
 }
 header{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    background-color: #3D6B13;
+    text-align: center;
+    height: 7rem;
 }
 header h1{
     flex-basis: 35%;
-    color: #BF0404;
-    text-align: center;
-    background-color: whitesmoke;
-    border: 1px solid #BF0404;
-    border-radius: 1.5rem;
-    padding: 1rem;
-    margin-right: 1rem;
+    color: #F29F05; 
+    font-size: 4rem;
     font-family: 'Indie Flower', cursive;
+    margin: 1rem;
+    text-decoration: underline;
 }
 header nav{
     flex-basis: 65%;
-    margin-top: 2rem;
     font-size: 0.8rem;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower', cursive;   
+    margin-top: 4rem;
+    padding: 0;
 }
 
   nav ul {
@@ -37,13 +39,13 @@ header nav{
   }
   
   nav li {
-    text-align: center;
     display: inline-block;
+
   }
   
   nav a {
     font-size: 1.5rem;
-    color: #BF0404;
+    color: #F29F05;
     font-weight: bold;
     text-decoration: none;
     display: block;
@@ -52,10 +54,11 @@ header nav{
   
   nav a:hover {
     text-decoration: underline;
+    color: whitesmoke;
   }
 
 img {
-    border: 3px solid #448C30;
+    border-radius:100%
 }
 cite {
     font-size: 0.7rem;
@@ -81,7 +84,7 @@ h1.bookExercise{
 }
 
 blockquote {
-    border-left: 10px solid #2955D9;
+    border-left: 10px solid #F28705;
     margin: 1.5em 10px;
     padding: 0.5em 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -128,12 +131,75 @@ article {
     margin: 0 auto;
 }
 
-/* Color Theme Swatches in Hex */
-/* Color Theme Swatches in Hex */
-.Festive-autumn-decor-from-pumpkins,-berries-and-leaves-on-a-white--wooden-background.-Concept-of-Thanksgiving-day-or-Halloween.-Flat-lay-autumn-composition-with-copy-space.-1-hex { color: #730217; }
-.Festive-autumn-decor-from-pumpkins,-berries-and-leaves-on-a-white--wooden-background.-Concept-of-Thanksgiving-day-or-Halloween.-Flat-lay-autumn-composition-with-copy-space.-2-hex { color: #F2F2F0; }
-.Festive-autumn-decor-from-pumpkins,-berries-and-leaves-on-a-white--wooden-background.-Concept-of-Thanksgiving-day-or-Halloween.-Flat-lay-autumn-composition-with-copy-space.-3-hex { color: #F29F05; }
-.Festive-autumn-decor-from-pumpkins,-berries-and-leaves-on-a-white--wooden-background.-Concept-of-Thanksgiving-day-or-Halloween.-Flat-lay-autumn-composition-with-copy-space.-4-hex { color: #F28705; }
-.Festive-autumn-decor-from-pumpkins,-berries-and-leaves-on-a-white--wooden-background.-Concept-of-Thanksgiving-day-or-Halloween.-Flat-lay-autumn-composition-with-copy-space.-5-hex { color: #F25D27; }
+/*  Calculator styles */
 
+.calc-wrapper {
+    width: 400px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.calc-total{
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 1.5rem 0.5rem;
+}
+
+.button-row {
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+
+}
+
+.calc-button{
+    background-color: #d8d9db;
+    color: black;
+    height: 100px;
+    flex-basis: 25%;
+    border: none;
+    font-size: 2rem;
+    border: 2px solid black;
+
+}
+
+.double {
+    flex-basis: 50%;
+}
+
+.triple {
+    flex-basis: 75%;
+}
+
+.calc-button:hover {
+    background-color: #ebebeb;
+}
+
+.calc-button:active {
+    background-color: #bbbcbe;
+}
+
+.operator{
+    background-color: #df974c;
+}
+
+.operator:hover{
+    background-color: #dfb07e;
+}
+.operator:active{
+    background-color: #dd8d37;
+}
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in Hex */
+.backupcolors{
+    color: #730217; 
+    color: #F2F2F0;
+    color: #F29F05; 
+    color: #F28705;
+    color: #F25D27;
+    color: #AABDB7;
+    color: #3D6B13;
+}
 
