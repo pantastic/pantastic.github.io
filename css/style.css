@@ -1,205 +1,198 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(235, 235, 235);
+    background-color:#72A684;
 }
-.wrapper{
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
-header{
+
+
+/* header stuff */
+header {
+    color: whitesmoke;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
-    background-color: #3D6B13;
-    text-align: center;
-    height: 7rem;
+    font-family: 'Permanent Marker', cursive;
+    margin: 5rem 5rem;
+    justify-content: space-evenly;
 }
-header h1{
-    flex-basis: 35%;
-    color: #F29F05; 
-    font-size: 4rem;
-    font-family: 'Indie Flower', cursive;
-    margin: 1rem;
-    text-decoration: underline;
+
+.header-left {
+    display: inline-block;
+    flex-basis: 50%;
+    margin: 15rem 5rem;
+
 }
-header nav{
-    flex-basis: 65%;
-    font-size: 0.8rem;
-    font-family: 'Indie Flower', cursive;   
-    margin-top: 4rem;
+
+header h1 {
+    font-size: 5rem; 
     padding: 0;
 }
 
-  nav ul {
+header h2 {
+    font-size: 2rem;    
+    margin-top: -4rem;
+    padding: 0;
+}
+
+.header-alt {
+    color: whitesmoke;
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: 'Permanent Marker', cursive;
+    margin: 5rem 5rem;
+    justify-content: space-evenly;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.header-right {
+    flex-basis: 30%;
+    margin: 15rem 5rem;
+    text-align: center;
+    align-content: flex-end;
+}
+.header-left-alt {
+    display: inline-block;
+    flex-basis: 50%;
+    margin: 1rem 5rem;
+}
+
+.header-left-alt h1 {
+    font-size: 3rem;
+}
+
+.header-left-alt h2{
+    font-size: 1rem;
+    margin-top: -2.5rem;
+}
+.header-right-alt {
+    flex-basis: 30%;
+    margin: 1rem 5rem;
+    text-align: center;
+    align-content: flex-end;
+}
+
+.home-button {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+/* navigation home*/ 
+nav {
+    width: 10rem;
+    text-align: center;
+    margin-top: 4rem;
+    border: 2px solid white;
+    border-radius: 2rem;
+}
+
+nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    font-family: 'Indie Flower', cursive;
-  }
+}
   
-  nav li {
+nav li {
+    margin: 0.5rem;
+}
+
+nav a {
+    position: relative;
     display: inline-block;
-
-  }
-  
-  nav a {
+    text-align: center;
     font-size: 1.5rem;
-    color: #F29F05;
-    font-weight: bold;
-    text-decoration: none;
-    display: block;
-    padding: 0.5rem;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
     color: whitesmoke;
-  }
-
-img {
-    border-radius:100%
-}
-cite {
-    font-size: 0.7rem;
-}
-.bigbold {
-    font-weight: bold;
-    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.bookExercise {
-    background: url(images/paperbg.jpg);
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-    border-top: 1px solid black ;
-    border-bottom: 1px solid black ;
-    border-right: 1px solid black ;
+nav a::after {
+    content: "";
+    position: absolute;
 }
 
-h1.bookExercise{
-    border: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-decoration: underline;
-    
+nav a::after{
+    top: 95%;
+    height: 3px;
+    width: 0;
+    left: 5%;
+    background-color: #D92E1E;
+    transition: 0.2s ease all .2s;
 }
 
-blockquote {
-    border-left: 10px solid #F28705;
-    margin: 1.5em 10px;
-    padding: 0.5em 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.4rem;
-    font-style: italic;
-    margin-left: 4rem;
-  }
-
-blockquote:before {
-    color: #448C30;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
-  }
-blockquote p {
-    display: inline;
-  }
-#booklist{
-    font-style: italic;
-    border-left: 5px solid darkslategrey;
-}
-#bookfooter{
-    font-size: 0.7rem;
-    font-style: italic;
-}
-body.bookExercise p{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+nav li:hover a::after {
+    width: 90%;
+    transition: 0.3s ease all;
 }
 
-.content1 {
-    width: 75%;  
-    padding-left: 0.5rem;
-}
-
-.floatleft {
-    float: left;
-    border: 5px solid red;
-    margin: 0 1rem 1rem 0;   
-}
-
-article {
-    width: 50rem;
-    margin: 0 auto;
-}
-
-/*  Calculator styles */
-
-.calc-wrapper {
-    width: 400px;
-    background-color: black;
-    color: white;
+/* alt nav */
+.alter-nav {
+    text-align: center;
+    margin-top: 4rem;
     display: flex;
-    flex-flow: column nowrap;
-}
-
-.calc-total{
-    font-size: 2.5rem;
-    text-align: right;
-    padding: 1.5rem 0.5rem;
-}
-
-.button-row {
-    display: flex;
-    align-content: stretch;
-    justify-content: space-between;
-
-}
-
-.calc-button{
-    background-color: #d8d9db;
-    color: black;
-    height: 100px;
-    flex-basis: 25%;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
     border: none;
-    font-size: 2rem;
-    border: 2px solid black;
-
 }
 
-.double {
-    flex-basis: 50%;
+.alter-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.alter-nav li {
+    margin: 0.5rem;  
+    display: inline-block;
 }
 
-.triple {
+.alter-nav .alt-nav::after {
+    content: "";
+    position: absolute;
+}
+
+.alter-nav .alt-nav::after{
+    top: 95%;
+    height: 3px;
+    width: 0;
+    left: 5%;
+    background-color: #D92E1E;
+    transition: 0.2s ease all .2s;
+}
+
+.alter-nav li:hover .alt-nav::after {
+    width: 90%;
+    transition: 0.3s ease all;
+}
+
+
+/* content stuff */
+.content-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 5rem 0 5rem;
+}
+
+section {
     flex-basis: 75%;
+    margin: 0 auto;
+    justify-content: space-around;
+    border: 1px solid #D92E1E;
+    border-radius: 0.5rem;
+    background-color: #F3EEE6;
+    padding: 1rem;
 }
 
-.calc-button:hover {
-    background-color: #ebebeb;
-}
 
-.calc-button:active {
-    background-color: #bbbcbe;
-}
 
-.operator{
-    background-color: #df974c;
-}
 
-.operator:hover{
-    background-color: #dfb07e;
-}
-.operator:active{
-    background-color: #dd8d37;
-}
 /* Color Theme Swatches in Hex */
-/* Color Theme Swatches in Hex */
-.backupcolors{
-    color: #730217; 
-    color: #F2F2F0;
-    color: #F29F05; 
-    color: #F28705;
-    color: #F25D27;
-    color: #AABDB7;
-    color: #3D6B13;
+.basecolors {
+    color: #72A684; 
+    color: #BF9004; 
+    color: #F2C438;
+    color: #D97904;
+    color: #D92E1E; 
 }
-
