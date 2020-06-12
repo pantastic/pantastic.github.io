@@ -1,5 +1,6 @@
 body {
     background-color:#72A684;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -9,7 +10,7 @@ header {
     display: flex;
     flex-flow: row nowrap;
     font-family: 'Permanent Marker', cursive;
-    margin: 5rem 5rem;
+    margin: 5rem 5rem 0 5rem;
     justify-content: space-evenly;
 }
 
@@ -123,6 +124,7 @@ nav li:hover a::after {
 }
 
 /* alt nav */
+
 .alter-nav {
     text-align: center;
     margin-top: 4rem;
@@ -167,15 +169,60 @@ nav li:hover a::after {
     transition: 0.3s ease all;
 }
 
+/* submenu */
+.sub_menu {
+    font-size: 1rem;
+    
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.sub_menu ul {
+    list-style-type: none;
+    
+    padding: 0;
+    margin: 0 0.5rem 0 0 ;
+}
+  
+.sub_menu li  {
+    display: inline-block;
+    border: 1px solid #D92E1E;
+    border-bottom: none;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+.sub_menu a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.sub_menu .menu-current, .sub_menu .menu-current a {
+    background-color: #F3EEE6;
+    color: #D92E1E;
+}
+
+.sub_menu a:hover{
+    color: darkred;
+    text-decoration: underline;
+}
 
 /* content stuff */
 .content-wrapper {
     display: flex;
-    flex-flow: row nowrap;
-    margin: 0 5rem 0 5rem;
+    flex-flow: column nowrap;
+    margin: 0 10rem; 
+    justify-content: space-evenly;
 }
 
-section {
+.content {
+    width: 100%;
+    flex-flow: row nowrap;
     flex-basis: 75%;
     margin: 0 auto;
     justify-content: space-around;
@@ -185,6 +232,95 @@ section {
     padding: 1rem;
 }
 
+img {
+    content: stretch;
+    border: 1px solid #D92E1E;
+}
+
+/*  Calculator styles */
+
+.calc-wrapper {
+    width: 400px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.calc-total{
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 1.5rem 0.5rem;
+}
+
+.button-row {
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+    
+}
+
+.calc-button{
+    background-color: #d8d9db;
+    color: black;
+    height: 100px;
+    flex-basis: 25%;
+    border: none;
+    font-size: 2rem;
+    border: 2px solid black;
+}
+
+.double {
+    flex-basis: 50%;
+}
+
+.triple {
+    flex-basis: 75%;
+}
+
+.calc-button:hover {
+    background-color: #ebebeb;
+}
+
+.calc-button:active {
+    background-color: #bbbcbe;
+}
+
+.operator{
+    background-color: #df974c;
+}
+
+.operator:hover{
+    background-color: #dfb07e;
+}
+.operator:active{
+    background-color: #dd8d37;
+}
+
+
+.floatleft {
+    float: left;
+    margin: 0 1rem 1rem 0;
+    overflow: auto;   
+}
+
+.floatleft::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+p {
+    width: 70%;
+}
+
+.sec-content{
+    overflow: auto;
+    border-bottom: 1px dotted darkslategray;
+    margin-bottom: 1rem;
+}
 
 
 
